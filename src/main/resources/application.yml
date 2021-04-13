@@ -1,0 +1,5 @@
+springdoc:
+  show-actuator: false
+  packagesToScan: es.meli
+  api-docs:
+    path: /v3/api-docs
