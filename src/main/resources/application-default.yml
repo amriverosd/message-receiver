@@ -1,0 +1,11 @@
+springdoc:
+  show-actuator: false
+  packagesToScan: es.meli
+  api-docs:
+    path: /v3/api-docs
+    
+config:
+  kenobi: -500, -200
+  skywalker: 100, -100
+  sato: 500, 100
+
