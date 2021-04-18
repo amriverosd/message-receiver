@@ -1,17 +1,14 @@
-package es.meli.controller.dto;
+package es.meli.controller.receiver.dto;
 
 import lombok.Builder;
 import lombok.Data;
 
 @Data
 @Builder
-public class ResponseMessage {
+public class PositionResponse {
 
-  private String message;
-  
   private double x;
-  
+
   private double y;
-  
-  
+
 }
