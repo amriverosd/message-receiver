@@ -9,3 +9,7 @@ config:
   skywalker: 100, -100
   sato: 500, 100    
   
+spring:
+  redis:
+    host: localhost
+    port: 6379
