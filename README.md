@@ -10,7 +10,7 @@ El algoritmo que se usó para el calculo de las coordenadas es conocido como tri
 
 Tener instalado Java y Docker en la computadora.
 
-La aplicación usa Redis para persistir los datos del nivel 2, sin embargo, siguiendo los pasos de instalación no es necesario instalarlo. 
+La aplicación usa Redis para persistir los datos del nivel 3, sin embargo, siguiendo los pasos de instalación no es necesario instalarlo. 
 
 ## Instalación 
 
@@ -140,7 +140,7 @@ GET: /v1/services/topsecret_split
 Con base en la información almacenada determina la posición y mensaje de ser posible. 
 
 
-## Aplicacin en linea
+## Aplicación en linea
 
 Si desea probar las funcionalidades sin descargar el codigo, la aplicación se encuentra disponible en: 
 
