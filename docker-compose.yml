@@ -1,9 +1,13 @@
 version: '3'
 services:
   web:
-    image: test:0.0.3
+    build: .
+    restart: always
+    container_name: message-receiver
     ports:
     - 8080:8080
+    environment:
+    - "SPRING_PROFILES_ACTIVE=default"
     networks:
     - spring
   redis:

@@ -20,4 +20,4 @@ FROM adoptopenjdk/openjdk11:alpine-slim
 COPY --from=builder /app/target/image-0.0.1.jar /message-receiver.jar
 
 # Run the web service on container startup.
-ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom","-Dspring.profiles.active=prod","-jar","/message-receiver.jar"]
+ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom","-jar","/message-receiver.jar"]
