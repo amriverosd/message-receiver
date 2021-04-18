@@ -1,4 +1,4 @@
-package es.meli.controller.dto;
+package es.meli.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
