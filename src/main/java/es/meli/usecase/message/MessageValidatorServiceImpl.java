@@ -34,6 +34,7 @@ public class MessageValidatorServiceImpl implements MessageValidatorService {
    */
   private String getMessage(List<List<String>> satelliteList) {
     log.info("Analyzing the information for {} ", satelliteList);
+    checkPrecondition(satelliteList);
     int satellitesNumber = satelliteList.size();
     StringBuilder message = new StringBuilder();
     for (int i = 0; i < satelliteList.get(0).size(); i++) {
@@ -41,6 +42,17 @@ public class MessageValidatorServiceImpl implements MessageValidatorService {
       message.append(" ");
     }
     return message.toString();
+  }
+
+  /**
+   * Check if there aren't information in the DB.
+   * @param satelliteList. 
+   */
+  private void checkPrecondition(List<List<String>> satelliteList) {
+    if(satelliteList.isEmpty()) {
+      log.error("Error getting the satellites in DB");
+      throw new UnprocessableMessage("Message not found");
+    }    
   }
 
   /**
